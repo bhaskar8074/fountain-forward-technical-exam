@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px; /* Adjust based on your logo size */
+}
+
+.admin-view-button {
+  margin-left: 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-view-button:hover {
+  background-color: #ddd;
+}
+
+.support-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  cursor: pointer;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.header-section h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dealer-filter-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.dealer-select {
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  background-color: #f7921e; /* Updated from both files */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold; /* Consolidated from both files */
+}
+
+.filter-button:hover {
+  background-color: #e6820f; /* Updated from both files */
+}
+
+.filter-container {
+  position: relative; /* Updated from both files */
+}
+
+.filter-container .filter-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff9800;
+  color: white;
+}
+
+.filter-header h2 {
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.filter-content {
+  margin-top: 20px; /* Updated from both files */
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.apply-button,
+.reset-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.apply-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.apply-button:hover {
+  background-color: #2e7d32; /* Updated from both files */
+}
+
+.reset-button:hover {
+  background-color: #b71c1c; /* Updated from both files */
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color:#e6820f;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-bottom: 30px;
+}
+
+.chart-container h2 {
+  margin-bottom: 10px;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-buttons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chart-buttons button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.chart-buttons button:hover {
+  background-color: #f7921e;
+  color: #fff;
+  border-color: #f7921e;
+}
+
+/* History Log Table */
+.history-log {
+  margin-bottom: 30px;
+}
+
+.history-log h2 {
+  margin-bottom: 20px;
+}
+
+.history-log table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.history-log th,
+.history-log td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.history-log th {
+  background-color: #f0f0f0;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pagination-controls label {
+  margin-right: 10px;
+}
+
+.pagination-controls select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7921e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f7921e;
+}
